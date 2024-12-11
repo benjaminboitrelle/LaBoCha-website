@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="LaBoCha is an innovative folk-jazz trio based in Hamburg, Germany, blending chanson, jazz, gypsy rhythms, and subtle oriental influences. Discover their soulful music, poetic storytelling, and unique blend of French folk, jazz improvisation, and Eastern textures."
+    />
+    <meta
+      name="keywords"
+      content="LaBoCha, folk-jazz, gypsy rhythms, chanson, jazz, Hamburg, music, oriental influences, live music, French folk, Eastern music, jazz trio"
+    />
+    <meta name="author" content="LaBoCha Band" />
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="LaBoCha - Folk-Jazz Trio" />
+    <meta
+      property="og:description"
+      content="Explore the unique sound of LaBoCha, a folk-jazz trio blending chanson, jazz, and Eastern influences, led by soulful French songwriter Giohm."
+    />
+    <meta property="og:image" content="assets/images/hero-image.jpg" />
+    <meta property="og:url" content="https://www.labocha.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LaBoCha - Folk-Jazz Trio" />
+    <meta
+      name="twitter:description"
+      content="LaBoCha blends folk, jazz, and Eastern influences to create an evocative and intimate sound."
+    />
+    <meta name="twitter:image" content="assets/images/hero-image.jpg" />
+
+    <title>LaBoCha - Folk-Jazz Trio | Hamburg, Germany</title>
+
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Smooth Scroll Library (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <header id="header">
+      <div class="logo">
+        <h1>LaBoCha</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home" class="smooth-scroll" title="Home">Home</a></li>
+          <li>
+            <a href="#about" class="smooth-scroll" title="About Us">About</a>
+          </li>
+          <li>
+            <a href="#music" class="smooth-scroll" title="Listen to Music"
+              >Music</a
+            >
+          </li>
+          <li>
+            <a href="#tour" class="smooth-scroll" title="Tour Dates">Tour</a>
+          </li>
+          <li>
+            <a href="#contact" class="smooth-scroll" title="Contact Us"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section (Full-Screen Section) -->
+    <section id="home" class="full-screen">
+      <div class="hero-content">
+        <h2>Welcome to LaBoCha's World</h2>
+        <p>
+          Discover our unique blend of folk, jazz, gypsy rhythms, and oriental
+          influences. A journey through soulful melodies and emotional
+          storytelling.
+        </p>
+        <a href="#music" class="cta-btn smooth-scroll">Listen Now</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="full-screen">
+      <div class="section-content">
+        <h2>About LaBoCha</h2>
+        <p>
+          LaBoCha is an innovative folk-jazz trio based in Hamburg, Germany,
+          blending chanson, jazz, gypsy rhythms, and subtle oriental influences.
+          Our music combines poetic storytelling with intricate melodies,
+          creating a sound that feels both intimate and expansive.
+        </p>
+        <p>
+          Led by French songwriter and composer Giohm, we weave together French
+          folk traditions, jazz improvisation, and Eastern musical textures to
+          create something unique and timeless.
+        </p>
+      </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="full-screen">
+      <div class="section-content">
+        <h2>Our Music</h2>
+        <p>
+          Explore our latest tracks and albums. Our music blends folk and jazz
+          with Mediterranean and Eastern influences, offering an experience
+          that's both personal and universal.
+        </p>
+        <div class="music-player">
+          <!-- Example of an embedded music player (Spotify) -->
+          <iframe
+            src="https://open.spotify.com/embed/track/XYZ123"
+            width="100%"
+            height="380"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tour Section -->
+    <section id="tour" class="full-screen">
+      <div class="section-content">
+        <h2>Upcoming Tour Dates</h2>
+        <ul>
+          <li>Berlin - Jan 15, 2024</li>
+          <li>Hamburg - Feb 10, 2024</li>
+          <li>Paris - Mar 5, 2024</li>
+          <!-- Add more tour dates as necessary -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="full-screen">
+      <div class="section-content">
+        <h2>Contact Us</h2>
+        <p>
+          Want to book us for a show, ask about our music, or just say hello?
+          Get in touch with us below!
+        </p>
+        <a href="mailto:contact@labocha.com" class="cta-btn">Email Us</a>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 LaBoCha. All Rights Reserved.</p>
+      <div class="social">
+        <a
+          href="https://www.facebook.com/LaBoChaBand"
+          target="_blank"
+          title="Follow us on Facebook"
+          >Facebook</a
+        >
+        <a
+          href="https://www.instagram.com/LaBoChaBand"
+          target="_blank"
+          title="Follow us on Instagram"
+          >Instagram</a
+        >
+        <a
+          href="https://twitter.com/LaBoChaBand"
+          target="_blank"
+          title="Follow us on Twitter"
+          >Twitter</a
+        >
+      </div>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+      $(document).ready(function () {
+        // Add smooth scroll to all links with class 'smooth-scroll'
+        $(".smooth-scroll").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

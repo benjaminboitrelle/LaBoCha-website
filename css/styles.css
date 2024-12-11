@@ -1,0 +1,274 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Full-Screen Sections (scrolling sections) */
+.full-screen {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+#home {
+  background-image: url("assets/images/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#home .hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#home h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+#home .cta-btn {
+  background-color: #f5a623;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#home .cta-btn:hover {
+  background-color: #d98600;
+}
+
+/* Section Content */
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+#about {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Music Section */
+#music {
+  background-color: #f0f0f0;
+}
+
+.music-player {
+  max-width: 100%;
+  margin: 30px auto;
+}
+
+.music-player iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 380px;
+}
+
+/* Tour Section */
+#tour {
+  background-color: #fff;
+}
+
+#tour ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+#tour ul li {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+#contact .cta-btn {
+  background-color: #f5a623;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#contact .cta-btn:hover {
+  background-color: #d98600;
+}
+
+/* Navigation Bar */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center; /* Center the title */
+  align-items: center;
+  flex-direction: column; /* Stack title and navigation vertically */
+  height: auto;
+}
+
+/* Title (LaBoCha) */
+header .logo {
+  font-size: 3rem; /* Adjust size of the logo */
+  color: #f5a623; /* Gold tone color */
+  font-weight: bold;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+  /* font-variant: small-caps; Apply small caps */
+  margin-bottom: 10px; /* Space between title and navigation */
+}
+
+/* Navigation Menu */
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  width: 100%;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f5a623;
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+footer .social {
+  margin-top: 10px;
+}
+
+footer .social a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+footer .social a:hover {
+  color: #f5a623;
+}
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  #home h2 {
+    font-size: 2.5rem;
+  }
+
+  #home p {
+    font-size: 1.2rem;
+  }
+
+  .section-content {
+    padding: 20px;
+  }
+
+  header {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  header .logo {
+    margin-bottom: 20px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .music-player iframe {
+    width: 100%;
+    max-width: none;
+  }
+
+  .cta-btn {
+    padding: 10px 20px;
+  }
+}
